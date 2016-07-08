@@ -1,0 +1,35 @@
+@import "reset.css";
+
+
+#about:target {
+	display: block;
+	z-index: 100;
+	background-color: rgba(0,0,0, 0.5);
+	height: 100vh;
+	width: 100vw;
+}
+#about:not(:target) {
+	display: none;
+}
+
+.masonry {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.image {
+	display: inline-flex;
+}
+
+.image--horizontal {
+	width: 960px;
+	height: 640px;
+}
+.image--vertical {
+	width: 640px;
+	height: 960px;
+}
+.image--square {
+	height: 640px;
+	width: 640px;
+}
